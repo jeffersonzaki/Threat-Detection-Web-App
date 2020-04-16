@@ -14,7 +14,7 @@ st.sidebar.title("Image Selection")
 
 
 # Path to images that will be used for detection
-image_path = "/Users/zakijefferson/code/Threat-Detection/Image-Classification/WebApp/Demo-Images/"
+image_path = "Threat-Detection-Web-App/Demo-Images"
 onlyfiles = [f for f in listdir(image_path) if isfile(join(image_path, f))]
 imageselect = st.sidebar.selectbox("Please pick an image using this drop-down menu.", onlyfiles)
 
