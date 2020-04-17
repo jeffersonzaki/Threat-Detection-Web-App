@@ -28,7 +28,7 @@ import firearm_testing
 
 
 # Function that leades to hdf5 files of the saved CNN model
-@st.cache
+# @st.cache
 def firearm_detection():
     """
     This function leads to the
