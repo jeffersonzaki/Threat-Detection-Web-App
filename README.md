@@ -29,3 +29,20 @@ DEMO:
 - [Requirements](https://github.com/jeffersonzaki/Threat-Detection-Web-App/blob/master/requirements.txt) - Text file of the requirements/packages used for the prediction model.
 
 - [Setup Shell File](https://github.com/jeffersonzaki/Threat-Detection-Web-App/blob/master/setup.sh) - Used for streamlit login.
+
+## Project Member
+[Zaki Jefferson](https://github.com/jeffersonzaki)
+
+## Responsibilities
+[Zaki Jefferson](https://github.com/jeffersonzaki)
+
+- Retrieve image data
+- Develop a variety of Convolutional Neural Networks
+- Augment data
+- Develp web app
+- Clean notebook
+- Develop presentation
+- Create and sync web app
+
+ALL DONE ON AWS
+
