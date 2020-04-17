@@ -4,6 +4,8 @@ from os.path import isfile, join
 
 from keras.models import load_model
 from PIL import Image
+import keras.backend.tensorflow_backend as tb
+tb._SYMBOLIC_SCOPE.value = True
 
 st.title('Threat Detection')
 st.header("This tool automatically identifies a firearm using Convolutional Neural Networks (CNNs).")
