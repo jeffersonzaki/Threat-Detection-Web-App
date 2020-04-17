@@ -39,10 +39,9 @@ DEMO: https://bit.ly/firearm-detection <-- Link to web app
 - Retrieve image data
 - Develop a variety of Convolutional Neural Networks
 - Augment data
-- Develp web app
+- Develp web app - AWS EC2
 - Clean notebook
 - Develop presentation
-- Create web app using AWS EC2
 
 ALL DONE ON AWS
 
