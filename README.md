@@ -42,7 +42,7 @@ DEMO: https://bit.ly/firearm-detection <-- Link to web app
 - Develp web app
 - Clean notebook
 - Develop presentation
-- Create and sync web app
+- Create web app using AWS EC2
 
 ALL DONE ON AWS
 
