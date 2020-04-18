@@ -20,8 +20,13 @@ image_path = "Demo-Images/"
 onlyfiles = [f for f in listdir(image_path) if isfile(join(image_path, f))]
 imageselect = st.sidebar.selectbox("Please pick an image using this drop-down menu.", onlyfiles)
 
+# Opening Images
 image = Image.open(image_path + imageselect)
 st.image(image, use_column_width=True)
+
+# Opening videos
+vid_files = open("video.html", "rb").read()
+st.video(vid_files)
 
 # Importing other python file
 import firearm_testing
