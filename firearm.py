@@ -17,7 +17,7 @@ st.sidebar.title("Image Selection")
 # Path to images that will be used for detection
 image_path = "Demo-Images/"
 # Opening videos
-vid_files = open(f"{image_path}video.html", "rb").read()
+vid_files = open("video.html", "rb").read()
 # st.video(vid_files)
 # Opening images/files in folder and dropping them into the select box sidebar
 onlyfiles = [f for f in listdir(image_path) if isfile(join(image_path, f)) or isfile(join(vid_files, f))]
