@@ -17,8 +17,8 @@ st.sidebar.title("Image Selection")
 # Path to images that will be used for detection
 image_path = "Demo-Images/"
 # Opening videos
-vid_files = open("video.html", "rb").read()
-# st.video(vid_files)
+vid_files = open(f"{image_path}video.html", "rb").read()
+
 # Opening images/files in folder and dropping them into the select box sidebar
 onlyfiles = [f for f in listdir(image_path) if isfile(join(image_path, f)) or isfile(join(vid_files, f))]
 imageselect = st.sidebar.selectbox("Please pick an image using this drop-down menu.", onlyfiles)
@@ -26,6 +26,9 @@ imageselect = st.sidebar.selectbox("Please pick an image using this drop-down me
 # Opening Images
 image = Image.open(image_path + imageselect)
 st.image(image, use_column_width=True)
+
+# Showing video
+st.video(vid_files)
 
 # Importing other python file
 import firearm_testing
