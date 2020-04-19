@@ -16,13 +16,13 @@ st.write("Please pick an image using the drop-down menu on the left.")
 st.sidebar.title("Image Selection")
 
 # Path to images that will be used for detection
-image_path = "Demo-Images/"
-onlyfiles = [f for f in listdir(image_path) if isfile(join(image_path, f))]
-imageselect = st.sidebar.selectbox("Please pick an image using this drop-down menu.", onlyfiles)
-
-# Opening Images
-image = Image.open(image_path + imageselect)
-st.image(image, use_column_width=True)
+# image_path = "Demo-Images/"
+# onlyfiles = [f for f in listdir(image_path) if isfile(join(image_path, f))]
+# imageselect = st.sidebar.selectbox("Please pick an image using this drop-down menu.", onlyfiles)
+#
+# # Opening Images
+# image = Image.open(image_path + imageselect)
+# st.image(image, use_column_width=True)
 
 # Importing other python file
 import firearm_testing
@@ -44,12 +44,12 @@ def firearm_detection():
 
 # Predicting using model
 model_1 = firearm_detection()
-
-# Predicting the selected images
-prediction_1 = firearm_testing.predict((model_1), image_path + imageselect)
-st.subheader('Step 1:')
-st.write('Does the image have an Assault Rifle or Handgun ?')
-st.title(prediction_1)  # Output: The prediction
+#
+# # Predicting the selected images
+# prediction_1 = firearm_testing.predict((model_1), image_path + imageselect)
+# st.subheader('Step 1:')
+# st.write('Does the image have an Assault Rifle or Handgun ?')
+# st.title(prediction_1)  # Output: The prediction
 
 # Display video file
 video_file = open("video1.mp4", "rb")
