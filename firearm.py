@@ -56,5 +56,5 @@ video_file = open("video1.mp4", "rb").read()
 st.video(video_file)
 
 # Predicting displayed video
-prediction_2 = firearm_testing.predict((model_1), video_file)
-st.title(prediction_2)
+# prediction_2 = firearm_testing.predict((model_1), video_file)
+# st.title(prediction_2)
