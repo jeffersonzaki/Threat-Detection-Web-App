@@ -53,8 +53,8 @@ st.title(prediction_1)  # Output: The prediction
 
 # Display video file
 video_file = open("video1.mp4", "rb")
-video_bytes = video_file.decode()
-st.video(video_bytes)
+video_bytes = video_file.read()
+st.video(video_bytes, format="video/mp4", start_time=0)
 
 # Predicting displayed video
 # prediction_2 = firearm_testing.predict((model_1), video_file)
