@@ -52,9 +52,9 @@ st.write('Does the image have an Assault Rifle or Handgun ?')
 st.title(prediction_1)  # Output: The prediction
 
 # Display video file
-video_file = open("video1.mp4", "rb")
+video_file = open("dog.mp4", "rb")
 video_bytes = video_file.read()
-st.video(video_bytes, format='video/mp4', start_time=3)
+st.video(video_bytes)
 
 # Predicting displayed video
 # prediction_2 = firearm_testing.predict((model_1), video_file)
