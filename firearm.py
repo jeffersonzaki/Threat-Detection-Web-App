@@ -53,7 +53,7 @@ st.title(prediction_1)  # Output: The prediction
 
 # Display video file
 video_file = open("video1.mp4", "rb")
-video_bytes = video_file.read().decode()
+video_bytes = video_file.decode()
 st.video(video_bytes)
 
 # Predicting displayed video
