@@ -5,6 +5,7 @@ from os.path import isfile, join
 from keras.models import load_model
 from PIL import Image
 import keras.backend.tensorflow_backend as tb
+
 tb._SYMBOLIC_SCOPE.value = True
 
 st.title('Threat Detection')
@@ -13,7 +14,6 @@ st.write("Please pick an image using the drop-down menu on the left.")
 
 # Sidebar that allows user to choose an image
 st.sidebar.title("Image Selection")
-
 
 # Path to images that will be used for detection
 image_path = "Demo-Images/"
@@ -42,9 +42,19 @@ def firearm_detection():
     return model_1
 
 
+# Predicting using model
 model_1 = firearm_detection()
 
-prediction_1 = firearm_testing.predict((model_1),image_path + imageselect)
+# Predicting the selected images
+prediction_1 = firearm_testing.predict((model_1), image_path + imageselect)
 st.subheader('Step 1:')
 st.write('Does the image have an Assault Rifle or Handgun ?')
-st.title(prediction_1)
+st.title(prediction_1)  # Output: The prediction
+
+# Display video file
+video_file = open("video1.mp4", "rb").read()
+st.video(video_file)
+
+# Predicting displayed video
+prediction_2 = firearm_testing.predict((model_1), video_file)
+st.title(prediction_2)
